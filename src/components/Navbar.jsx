@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Heart, Menu, X, User, ListOrdered, LogOut, Store } from 'lucide-react'
+import { Heart, Menu, X, User, ListOrdered, LogOut, Info } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { signOut } from '../lib/supabase'
 
