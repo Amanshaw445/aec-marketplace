@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft, Heart, User, Calendar, Building2, Phone, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowLeft, Heart, User, Calendar, Building2, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { supabase, toggleLike, isLiked, logWhatsappClick } from '../lib/supabase'
 
@@ -174,14 +174,6 @@ export default function ProductDetailPage({ onRequireAuth }) {
             </div>
           )}
 
-          {seller?.contact_number && (
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
-                <Phone size={15} className="text-gray-500" />
-              </div>
-              <p className="font-body text-gray-700 text-sm">+91 {seller.contact_number}</p>
-            </div>
-          )}
         </div>
       </div>
 

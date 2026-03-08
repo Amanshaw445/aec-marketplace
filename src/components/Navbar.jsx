@@ -93,6 +93,10 @@ export default function Navbar({ onRequireAuth }) {
                     <ListOrdered size={18} className="text-gray-400 group-hover:text-gray-700" />
                     <span className="font-body text-gray-600 group-hover:text-gray-900 text-sm">My Listings</span>
                   </Link>
+                   <Link to="/about" onClick={() => setMenuOpen(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors group">
+                    <Info size={18} className="text-gray-400 group-hover:text-gray-700" />
+                    <span className="font-body text-gray-600 group-hover:text-gray-900 text-sm">About</span>
+                  </Link>
                   <button onClick={handleLogout} className="w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-red-50 transition-colors group">
                     <LogOut size={18} className="text-gray-400 group-hover:text-red-500" />
                     <span className="font-body text-gray-600 group-hover:text-red-500 text-sm">Logout</span>
@@ -102,7 +106,7 @@ export default function Navbar({ onRequireAuth }) {
             </div>
 
             <div className="p-5 border-t border-gray-100">
-              <p className="text-xs text-gray-400">AEC Marketplace v1.0</p>
+              <p className="text-xs text-gray-400">AEC Marketplace v1.2</p>
               <p className="text-xs text-gray-300 mt-0.5">Academic Exchange Center – Buy & Sell within Campus</p>
               <p className="text-xs text-gray-300 mt-0.5">
   Developed and managed by{" "}

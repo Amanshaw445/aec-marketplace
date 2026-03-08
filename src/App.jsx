@@ -7,6 +7,7 @@ import SellPage from './pages/SellPage'
 import LikedPage from './pages/LikedPage'
 import MyListingsPage from './pages/MyListingsPage'
 import ProductDetailPage from './pages/ProductDetailPage'
+import AboutPage from './pages/AboutPage'
 import AuthModal from './components/AuthModal'
 import { supabase } from './lib/supabase'
 
@@ -47,6 +48,7 @@ export default function App() {
           <Route path="/liked" element={<LikedPage onRequireAuth={requireAuth} />} />
           <Route path="/my-listings" element={<MyListingsPage />} />
           <Route path="/product/:id" element={<ProductDetailPage onRequireAuth={requireAuth} />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </main>
 

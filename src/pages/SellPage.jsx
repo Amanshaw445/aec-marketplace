@@ -45,6 +45,19 @@ export default function SellPage() {
 
   const handleImageChange = (e) => {
     const files = Array.from(e.target.files)
+    const MAX_IMAGES = 3
+    const MAX_SIZE_BYTES = 3 * 1024 * 1024
+
+    const oversized = files.filter(f => f.size > MAX_SIZE_BYTES)
+    if (oversized.length > 0) {
+      setError('Each image must be under 3MB. Please choose a smaller image.')
+      return
+    }
+    if (images.length + files.length > MAX_IMAGES) {
+      setError('You can only upload up to 3 images per product.')
+      return
+    }
+    setError('')
     setImages((p) => [...p, ...files])
     files.forEach((file) => { const r = new FileReader(); r.onload = (ev) => setImagePreviews((p) => [...p, ev.target.result]); r.readAsDataURL(file) })
   }
@@ -189,11 +202,14 @@ export default function SellPage() {
                     </button>
                   </div>
                 ))}
-                <label className="w-20 h-20 rounded-xl border-2 border-dashed border-gray-300 hover:border-purple-400 flex flex-col items-center justify-center cursor-pointer transition-colors group bg-gray-50">
-                  <Plus size={18} className="text-gray-400 group-hover:text-purple-500" />
-                  <span className="text-gray-300 text-[9px] mt-1 group-hover:text-purple-400">Add</span>
-                  <input type="file" accept="image/*" multiple className="hidden" onChange={handleImageChange} />
-                </label>
+                {images.length < 3 && (
+                  <label className="w-20 h-20 rounded-xl border-2 border-dashed border-gray-300 hover:border-purple-400 flex flex-col items-center justify-center cursor-pointer transition-colors group bg-gray-50">
+                    <Plus size={18} className="text-gray-400 group-hover:text-purple-500" />
+                    <span className="text-gray-300 text-[9px] mt-1 group-hover:text-purple-400">Add</span>
+                    <input type="file" accept="image/*" multiple className="hidden" onChange={handleImageChange} />
+                  </label>
+                )}
+                <p className="w-full text-xs text-gray-400 mt-1">Max 3 images · 3MB each</p>
               </div>
             </div>
           </div>
