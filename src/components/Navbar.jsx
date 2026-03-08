@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Heart, Menu, X, User, ListOrdered, LogOut, Menu } from 'lucide-react'
+import { Heart, Menu, X, User, ListOrdered, LogOut, Store } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { signOut } from '../lib/supabase'
 
@@ -93,7 +93,7 @@ export default function Navbar({ onRequireAuth }) {
                     <ListOrdered size={18} className="text-gray-400 group-hover:text-gray-700" />
                     <span className="font-body text-gray-600 group-hover:text-gray-900 text-sm">My Listings</span>
                   </Link>
-                   <Link to="/about" onClick={() => setMenuOpen(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors group">
+                  <Link to="/about" onClick={() => setMenuOpen(false)} className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors group">
                     <Info size={18} className="text-gray-400 group-hover:text-gray-700" />
                     <span className="font-body text-gray-600 group-hover:text-gray-900 text-sm">About</span>
                   </Link>
@@ -105,20 +105,16 @@ export default function Navbar({ onRequireAuth }) {
               )}
             </div>
 
-            <div className="p-5 border-t border-gray-100">
-              <p className="text-xs text-gray-400">AEC Marketplace v1.2</p>
+            <div className="p-5 border-t border-gray-100">  <div className="p-5 border-t border-gray-100">
               <p className="text-xs text-gray-300 mt-0.5">Academic Exchange Center – Buy & Sell within Campus</p>
               <p className="text-xs text-gray-300 mt-0.5">
-  Developed and managed by{" "}
-  <a 
-    href="https://amanshaw.live" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="text-blue-400 hover:text-blue-300 underline"
-  >
-    Aman Shaw
-  </a>
-</p>
+              Developed and managed by{" "}
+            <a href="https://amanshaw.live" target="_blank" rel="noopener noreferrer"className="text-blue-400 hover:text-blue-300 underline">
+                Aman Shaw
+            </a>
+            </p>
+            </div>
+            <p className="text-xs text-gray-400">AEC Marketplace v1.3</p>
             </div>
           </div>
         </div>

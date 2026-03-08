@@ -17,12 +17,8 @@ export default function App() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    // When Supabase redirects back after magic link click,
-    // it puts #access_token=... in the URL hash.
-    // This listener catches that and establishes the session.
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       if (event === 'SIGNED_IN' && session) {
-        // Clean the hash from the URL without reloading the page
         if (window.location.hash.includes('access_token')) {
           navigate('/', { replace: true })
         }
