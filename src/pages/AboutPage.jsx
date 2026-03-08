@@ -28,8 +28,8 @@ export default function AboutPage() {
           </p>
         <div className="mt-4 inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1.5 text-xs font-medium">
   <span>💬 Found a bug or have suggestions?</span>
-  <a 
-  href="mailto:myzone551@gmail.com?subject=Contact%20from%20AEC%20Marketplace&body=Hello%20Aman," 
+  <a
+  href="mailto:myzone551@gmail.com"
   className="underline underline-offset-2 hover:text-white transition-colors"
 >
   Contact via Email →
@@ -44,7 +44,7 @@ export default function AboutPage() {
             AEC Marketplace is a free peer-to-peer buy & sell platform built for students and locals in Asansol. List your used laptops, mobiles, books, electronics, cycles and more — or find great deals from people nearby.
           </p>
           <p className="text-gray-500 text-sm leading-relaxed mt-3">
-            Think of it as OLX — but built specifically for the Asansol community, with a cleaner experience and direct WhatsApp contact.
+            Think of it as OLX — but built specifically for the AEC community, with a cleaner experience and direct WhatsApp contact.
           </p>
         </div>
 
