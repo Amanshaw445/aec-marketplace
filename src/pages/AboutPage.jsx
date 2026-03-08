@@ -28,14 +28,14 @@ export default function AboutPage() {
           </p>
        <div className="mt-4 inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1.5 text-xs font-medium">
   <span>💬 Found a bug or have suggestions?</span>
-  <a
-    href="mailto:myzone551@gmail.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="underline underline-offset-2 hover:text-white transition-colors"
-  >
-    Contact via Email →
-  </a>
+<a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=myzone551@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="underline underline-offset-2 hover:text-white transition-colors"
+>
+  Contact via Email →
+</a>
 </div>
         </div>
 
