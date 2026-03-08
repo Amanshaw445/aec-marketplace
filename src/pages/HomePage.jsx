@@ -66,7 +66,10 @@ export default function HomePage({ onRequireAuth }) {
       {/* Feed heading */}
       {!loading && (
         <div>
-         <h1 className="font-display font-bold text-gray-900 text-lg">Marketplace Feed</h1>
+        <h1 className="font-display font-bold text-lg bg-gradient-to-r from-purple-600 via-indigo-500 to-purple-600 bg-clip-text text-transparent animate-gradient">
+          Marketplace Feed
+              <span className="sr-only"> at Asansol Engineering College (AEC)</span>
+        </h1>
           <p className="text-gray-400 text-sm font-body">{products.length} product{products.length !== 1 ? 's' : ''} available</p>
         </div>
       )}
