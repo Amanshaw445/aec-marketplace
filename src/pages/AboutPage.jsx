@@ -24,7 +24,7 @@ export default function AboutPage() {
           </div>
           <h2 className="font-display font-bold text-2xl mb-2">AEC Marketplace</h2>
           <p className="text-purple-100 text-sm leading-relaxed">
-            A student-first platform to buy and sell goods / Engineering Projects in Asansol — no middlemen, no fees, just direct WhatsApp contact.
+            A student-first platform to buy and sell goods / Engineering Projects in (AEC), Asansol — no middlemen, no fees, just direct WhatsApp contact.
           </p>
        <div className="mt-4 inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1.5 text-xs font-medium">
   <span>💬 Found a bug or have suggestions?</span>
