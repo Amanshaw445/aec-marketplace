@@ -66,7 +66,7 @@ export default function HomePage({ onRequireAuth }) {
       {/* Feed heading */}
       {!loading && (
         <div>
-          <h2 className="font-display font-bold text-gray-900 text-lg">Marketplace Feed</h2>
+         <h1 className="font-display font-bold text-gray-900 text-lg">Marketplace Feed</h1>
           <p className="text-gray-400 text-sm font-body">{products.length} product{products.length !== 1 ? 's' : ''} available</p>
         </div>
       )}

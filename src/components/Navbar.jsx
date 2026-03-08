@@ -53,6 +53,8 @@ export default function Navbar({ onRequireAuth }) {
         <div className="fixed inset-0 z-[100] flex">
           <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setMenuOpen(false)} />
           <div className="relative w-72 bg-white h-full flex flex-col shadow-2xl animate-fade-up">
+            
+            {/* Drawer Header */}
             <div className="flex items-center justify-between p-5 border-b border-gray-100">
               <span className="font-display font-bold text-gray-900 text-lg">Menu</span>
               <button onClick={() => setMenuOpen(false)} className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors">
@@ -60,6 +62,7 @@ export default function Navbar({ onRequireAuth }) {
               </button>
             </div>
 
+            {/* Profile Section */}
             <div className="p-5 border-b border-gray-100">
               {user ? (
                 <div className="flex items-center gap-3">
@@ -86,6 +89,7 @@ export default function Navbar({ onRequireAuth }) {
               )}
             </div>
 
+            {/* Navigation Links */}
             <div className="flex-1 p-4 space-y-1">
               {user && (
                 <>
@@ -105,18 +109,27 @@ export default function Navbar({ onRequireAuth }) {
               )}
             </div>
 
-            <div className="p-5 border-t border-gray-100">  <div className="p-5 border-t border-gray-100">
-              <p className="text-xs text-gray-300 mt-0.5">Academic Exchange Center – Buy & Sell within Campus</p>
-              <p className="text-xs text-gray-300 mt-0.5">
-                Built by AEC student, for AEC students
-              {/* Developed and maintened by Aec student for Aec Students */}
-            {/* <a href="https://amanshaw.live" target="_blank" rel="noopener noreferrer"className="text-blue-400 hover:text-blue-300 underline">
-                Aman Shaw
-            </a> */}
-            </p>
-            </div>
-            <p className="text-xs text-gray-400">AEC Marketplace v1.3</p>
-            </div>
+            {/* Optimized Footer Section */}
+            <footer className="p-5 border-t border-gray-100 bg-gray-50/50">
+              <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Platform Info</p>
+              
+              <p className="text-xs text-gray-400 leading-relaxed">
+                <span className="sr-only">Asansol Engineering College </span>
+                Academic Exchange Center – Buy & Sell within Campus
+              </p>
+
+              <p className="text-xs text-gray-400 mt-2">
+                Built by an <span className="sr-only">Asansol Engineering College </span> 
+                AEC student, for AEC students
+              </p>
+
+              <div className="mt-4 flex items-center justify-between border-t border-gray-200 pt-3">
+                <p className="text-[10px] text-gray-300 uppercase">
+                  © {new Date().getFullYear()} AEC Marketplace
+                </p>
+                <p className="text-[10px] text-gray-300 font-mono">v1.3</p>
+              </div>
+              </footer>
           </div>
         </div>
       )}

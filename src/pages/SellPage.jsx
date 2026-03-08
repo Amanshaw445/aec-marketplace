@@ -110,7 +110,7 @@ export default function SellPage() {
       {/* STEP: TYPE */}
       {step === 'type' && (
         <div className="section-card animate-fade-up p-6">
-          <h2 className="font-display font-bold text-gray-900 text-xl mb-1">Are you an AEC Student?</h2>
+      <h1 className="font-display font-bold text-gray-900 text-xl mb-1">Are you an <span className="sr-only">Asansol Engineering College </span>AEC Student?</h1>
           <p className="text-gray-500 text-sm font-body mb-6">This helps us categorize your listing appropriately</p>
           <div className="space-y-3">
             <button onClick={() => handleTypeSelect('student')} className={`w-full flex items-center px-4 py-3.5 rounded-xl border-2 transition-all ${sellerType === 'student' ? 'border-purple-500 bg-purple-50' : 'border-gray-200 hover:border-gray-300 bg-white'}`}>

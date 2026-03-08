@@ -36,7 +36,7 @@ export default function AuthModal({ onClose, onSuccess }) {
         {step === 'options' && (
           <>
             <div className="mb-6">
-              <h2 className="font-display font-bold text-gray-900 text-xl">Login to continue</h2>
+              <h1 className="font-display font-bold text-gray-900 text-xl">Login to continue <span className="sr-only">to AEC Marketplace Asansol</span></h1>
               <p className="text-gray-500 text-sm font-body mt-1">Connect with sellers and save your favourite items</p>
             </div>
 
