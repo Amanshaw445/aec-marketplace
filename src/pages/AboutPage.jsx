@@ -139,7 +139,12 @@ export default function AboutPage() {
 
         {/* Footer note */}
         <div className="text-center py-2">
-          <p className="text-xs text-gray-400">Made with ❤️ for Asansol</p>
+           <p className="text-xs text-gray-300 mt-0.5">
+              Developed and managed by{" "}
+            <a href="https://amanshaw.live" target="_blank" rel="noopener noreferrer"className="text-blue-400 hover:text-blue-300 underline">
+                Aman Shaw
+            </a>
+            </p>
           <p className="text-xs text-gray-300 mt-1">© 2025 AEC Marketplace · All rights reserved</p>
         </div>
 
