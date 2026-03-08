@@ -24,18 +24,26 @@ export default function AboutPage() {
           </div>
           <h2 className="font-display font-bold text-2xl mb-2">AEC Marketplace</h2>
           <p className="text-purple-100 text-sm leading-relaxed">
-            A student-first platform to buy and sell second-hand goods in Asansol — no middlemen, no fees, just direct WhatsApp contact.
+            A student-first platform to buy and sell goods / Engineering Projects in Asansol — no middlemen, no fees, just direct WhatsApp contact.
           </p>
-          <div className="mt-4 inline-block bg-white/20 rounded-full px-4 py-1.5 text-xs font-medium">
-            Version 1.0 · Asansol, West Bengal
-          </div>
+        <div className="mt-4 inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1.5 text-xs font-medium">
+  <span>💬 Found a bug or have suggestions?</span>
+  <a 
+    href="https://amanshaw.live" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="underline underline-offset-2 hover:text-white transition-colors"
+  >
+    Contact via Portfolio →
+  </a>
+</div>
         </div>
 
         {/* What is this */}
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
           <h3 className="font-display font-bold text-gray-900 text-base mb-3">What is AEC Marketplace?</h3>
           <p className="text-gray-500 text-sm leading-relaxed">
-            AEC Marketplace is a free peer-to-peer buy & sell platform built for students and locals in Asansol. List your old laptops, mobiles, books, electronics, cycles and more — or find great deals from people nearby.
+            AEC Marketplace is a free peer-to-peer buy & sell platform built for students and locals in Asansol. List your used laptops, mobiles, books, electronics, cycles and more — or find great deals from people nearby.
           </p>
           <p className="text-gray-500 text-sm leading-relaxed mt-3">
             Think of it as OLX — but built specifically for the Asansol community, with a cleaner experience and direct WhatsApp contact.
