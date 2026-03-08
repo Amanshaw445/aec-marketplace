@@ -26,14 +26,16 @@ export default function AboutPage() {
           <p className="text-purple-100 text-sm leading-relaxed">
             A student-first platform to buy and sell goods / Engineering Projects in Asansol — no middlemen, no fees, just direct WhatsApp contact.
           </p>
-        <div className="mt-4 inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1.5 text-xs font-medium">
+       <div className="mt-4 inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1.5 text-xs font-medium">
   <span>💬 Found a bug or have suggestions?</span>
   <a
-  href="mailto:myzone551@gmail.com"
-  className="underline underline-offset-2 hover:text-white transition-colors"
->
-  Contact via Email →
-</a>
+    href="mailto:myzone551@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline underline-offset-2 hover:text-white transition-colors"
+  >
+    Contact via Email →
+  </a>
 </div>
         </div>
 
