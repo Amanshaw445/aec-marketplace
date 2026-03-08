@@ -108,10 +108,11 @@ export default function Navbar({ onRequireAuth }) {
             <div className="p-5 border-t border-gray-100">  <div className="p-5 border-t border-gray-100">
               <p className="text-xs text-gray-300 mt-0.5">Academic Exchange Center – Buy & Sell within Campus</p>
               <p className="text-xs text-gray-300 mt-0.5">
-              Developed and managed by{" "}
-            <a href="https://amanshaw.live" target="_blank" rel="noopener noreferrer"className="text-blue-400 hover:text-blue-300 underline">
+                Built by AEC student, for AEC students
+              {/* Developed and maintened by Aec student for Aec Students */}
+            {/* <a href="https://amanshaw.live" target="_blank" rel="noopener noreferrer"className="text-blue-400 hover:text-blue-300 underline">
                 Aman Shaw
-            </a>
+            </a> */}
             </p>
             </div>
             <p className="text-xs text-gray-400">AEC Marketplace v1.3</p>
