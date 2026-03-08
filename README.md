@@ -354,7 +354,7 @@ Open `aec-marketplace/index.html` and replace the `<head>` section with:
   <meta name="twitter:description" content="Buy & sell within Academic Exchange Center  community." />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
