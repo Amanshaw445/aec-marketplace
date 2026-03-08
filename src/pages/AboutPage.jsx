@@ -29,13 +29,11 @@ export default function AboutPage() {
         <div className="mt-4 inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1.5 text-xs font-medium">
   <span>💬 Found a bug or have suggestions?</span>
   <a 
-    href="https://amanshaw.live" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="underline underline-offset-2 hover:text-white transition-colors"
-  >
-    Contact via Portfolio →
-  </a>
+  href="mailto:myzone551@gmail.com?subject=Contact%20from%20AEC%20Marketplace&body=Hello%20Aman," 
+  className="underline underline-offset-2 hover:text-white transition-colors"
+>
+  Contact via Email →
+</a>
 </div>
         </div>
 
