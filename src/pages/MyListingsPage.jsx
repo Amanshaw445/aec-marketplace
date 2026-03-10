@@ -10,9 +10,27 @@ export default function MyListingsPage() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
 
+  const fetchProducts = () => {
+    if (!user) return
+    setLoading(true)
+    getUserProducts(user.id).then(({ data }) => { setProducts(data || []); setLoading(false) })
+  }
+
   useEffect(() => {
     if (!user) { navigate('/'); return }
-    getUserProducts(user.id).then(({ data }) => { setProducts(data || []); setLoading(false) })
+    fetchProducts()
+  }, [user])
+
+  // Re-fetch whenever the user navigates back to this page
+  useEffect(() => {
+    if (!user) return
+    const handleVisibility = () => { if (document.visibilityState === 'visible') fetchProducts() }
+    document.addEventListener('visibilitychange', handleVisibility)
+    window.addEventListener('focus', handleVisibility)
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibility)
+      window.removeEventListener('focus', handleVisibility)
+    }
   }, [user])
 
   const handleDelete = async (id) => {
