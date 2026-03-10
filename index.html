@@ -111,6 +111,7 @@
     }
     </script>
 
+    <!-- FIX 1: Removed duplicate "areaServed" key. Now uses a single array directly. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -124,28 +125,26 @@
         "addressCountry": "IN"
       },
       "areaServed": [
-       "areaServed": [
-  {"@type": "City", "name": "Asansol"},
-  {"@type": "City", "name": "Durgapur"},
-  {"@type": "City", "name": "Burnpur"},
-  {"@type": "City", "name": "Kanyapur"},
-  {"@type": "Neighborhood", "name": "Shristinagar Asansol"},
-  {"@type": "Neighborhood", "name": "Sentrum City"},
-  {"@type": "Neighborhood", "name": "Chelidanga"},
-  {"@type": "Neighborhood", "name": "Hutton Road"},
-  {"@type": "Neighborhood", "name": "Ushagram"},
-  {"@type": "Neighborhood", "name": "Murgasol"},
-  {"@type": "Neighborhood", "name": "Gopalpur"},
-  {"@type": "Neighborhood", "name": "Kalyanpur Housing Board"},
-  {"@type": "Neighborhood", "name": "Riverside Township Burnpur"},
-  {"@type": "Neighborhood", "name": "Santa Village"},
-  {"@type": "Neighborhood", "name": "Raniganj"},
-  {"@type": "Neighborhood", "name": "Jamuria"},
-  {"@type": "Neighborhood", "name": "Chittaranjan"},
-  {"@type": "Neighborhood", "name": "Neharu Colony"},
-  {"@type": "Neighborhood", "name": "Hill View"},
-  {"@type": "Neighborhood", "name": "Kumarpur"}
-]
+        {"@type": "City", "name": "Asansol"},
+        {"@type": "City", "name": "Durgapur"},
+        {"@type": "City", "name": "Burnpur"},
+        {"@type": "City", "name": "Kanyapur"},
+        {"@type": "Neighborhood", "name": "Shristinagar Asansol"},
+        {"@type": "Neighborhood", "name": "Sentrum City"},
+        {"@type": "Neighborhood", "name": "Chelidanga"},
+        {"@type": "Neighborhood", "name": "Hutton Road"},
+        {"@type": "Neighborhood", "name": "Ushagram"},
+        {"@type": "Neighborhood", "name": "Murgasol"},
+        {"@type": "Neighborhood", "name": "Gopalpur"},
+        {"@type": "Neighborhood", "name": "Kalyanpur Housing Board"},
+        {"@type": "Neighborhood", "name": "Riverside Township Burnpur"},
+        {"@type": "Neighborhood", "name": "Santa Village"},
+        {"@type": "Neighborhood", "name": "Raniganj"},
+        {"@type": "Neighborhood", "name": "Jamuria"},
+        {"@type": "Neighborhood", "name": "Chittaranjan"},
+        {"@type": "Neighborhood", "name": "Neharu Colony"},
+        {"@type": "Neighborhood", "name": "Hill View"},
+        {"@type": "Neighborhood", "name": "Kumarpur"}
       ],
       "description": "Dedicated student marketplace for Asansol Engineering College, NIT Durgapur, and MAKAUT affiliated colleges."
     }
@@ -156,7 +155,7 @@
       "@context": "https://schema.org",
       "@type": "ItemList",
       "name": "Colleges Covered",
-     "itemListElement": [
+      "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Asansol Engineering College (AEC)" },
         { "@type": "ListItem", "position": 2, "name": "National Institute of Technology Durgapur (NITD)" },
         { "@type": "ListItem", "position": 3, "name": "Maulana Abul Kalam Azad University of Technology (MAKAUT)" },
