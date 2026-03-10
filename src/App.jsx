@@ -10,6 +10,7 @@ import ProductDetailPage from './pages/ProductDetailPage'
 import AboutPage from './pages/AboutPage'
 import AuthModal from './components/AuthModal'
 import { supabase } from './lib/supabase'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App() {
   const [authModal, setAuthModal] = useState(false)
@@ -57,6 +58,7 @@ export default function App() {
           }}
         />
       )}
+      <Analytics />
     </div>
   )
 }
