@@ -1,5 +1,6 @@
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import ActionBar from './components/ActionBar'
 import HomePage from './pages/HomePage'
@@ -57,6 +58,7 @@ export default function App() {
           }}
         />
       )}
+      <Analytics />
     </div>
   )
 }
