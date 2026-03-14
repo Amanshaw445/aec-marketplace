@@ -37,7 +37,7 @@ export default function App() {
       <Navbar onRequireAuth={requireAuth} />
       <ActionBar />
 
-      <main className="pt-[112px] pb-8 px-4 max-w-2xl mx-auto">
+      <main className="pt-16 lg:pt-20 pb-8 px-4 lg:px-8 max-w-2xl lg:max-w-7xl mx-auto">
         <Routes>
           <Route path="/" element={<HomePage onRequireAuth={requireAuth} />} />
           <Route path="/sell" element={<SellPage />} />
