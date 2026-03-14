@@ -7,7 +7,7 @@ export default function ActionBar() {
   const isSell = location.pathname === '/sell'
 
   return (
-    <div className="fixed top-14 left-0 right-0 z-40 bg-white border-b border-gray-100" style={{boxShadow:'0 1px 3px rgba(0,0,0,0.04)'}}>
+    <div className="lg:hidden fixed top-14 left-0 right-0 z-40 bg-white border-b border-gray-100" style={{boxShadow:'0 1px 3px rgba(0,0,0,0.04)'}}>
       <div className="max-w-2xl mx-auto px-4 h-[50px] flex items-center gap-2">
         <Link to="/" className={`flex items-center justify-center w-20 h-10 rounded-xl transition-all ${isBuy ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-500 hover:bg-gray-200'}`}>
           shop<ShoppingBag size={18} />
